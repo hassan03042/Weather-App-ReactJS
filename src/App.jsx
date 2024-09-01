@@ -93,18 +93,18 @@ function App() {
           <span className="font-semibold">Wind Speed:</span>
           <span>{wind.speed} m/s</span>
         </div>
-        <div className="text-lg my-2 flex justify-between">
+        {/* <div className="text-lg my-2 flex justify-between">
           <span className="font-semibold">Cloudiness:</span>
           <span>{clouds.all}%</span>
-        </div>
+        </div> */}
         <div className="text-lg my-2 flex justify-between">
           <span className="font-semibold">Visibility:</span>
           <span>{visibility / 1000} km</span>
         </div>
-        <div className="text-lg my-2 flex justify-between">
+        {/* <div className="text-lg my-2 flex justify-between">
           <span className="font-semibold">Rain (Last Hour):</span>
           <span>{rain?.['1h'] || '0'} mm</span>
-        </div>
+        </div> */}
         <div className="text-lg my-2 flex justify-between">
           <span className="font-semibold">Sunrise:</span>
           <span>{new Date(sys.sunrise * 1000).toLocaleTimeString()}</span>
