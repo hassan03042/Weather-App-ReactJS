@@ -63,7 +63,7 @@ function App() {
       <select
         onChange={handleChange}
         value={cities.indexOf(chosen)}
-        className={`inputmq p-3 mb-5 border rounded-lg ${darkMode ? 'bg-gray-800 text-white border-gray-700' : 'bg-white text-gray-800 border-gray-300'} shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500`}>
+        className={`inputmq p-3 mb-5 border w-96 rounded-lg ${darkMode ? 'bg-gray-800 text-white border-gray-700' : 'bg-white text-gray-800 border-gray-300'} shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500`}>
         {cities.map((data, ind) => (
           <option key={ind} value={ind}>
             {data.name}
